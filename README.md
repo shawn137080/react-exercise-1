@@ -33,5 +33,31 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+### config
+
+create a config folder in /src , inside the config folder, create fbConfig.js.
+
+copy this to the .js file.
+
+``
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+// Initialize Firebase
+var config = {
+      // config are here
+  };
+  firebase.initializeApp(config);
+  firebase.firestore().settings({ timestampsInSnapshots: true});
+
+  export default firebase;
+
+``
+
+Go to Firebase, search the tap 'Add Firebase to your web app' ,
+copy the var config and paste in the .js.
+Everything it's ready.
+
 
 
