@@ -1,0 +1,41 @@
+html {
+  min-height: 100%;
+}
+
+
+body {
+  background: url(/img/bg.jpeg) no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+  min-height: 100%;
+  background-position: center
+}
+form {
+  padding: 20px;
+  margin-top: 60px;
+
+
+}
+form button, form h5 {
+  margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #283593 ;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+  color: #283593  !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
