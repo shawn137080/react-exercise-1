@@ -39,7 +39,7 @@ create a config folder in /src , inside the config folder, create fbConfig.js.
 
 copy this to the .js file.
 
-``
+```
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -53,7 +53,7 @@ var config = {
 
   export default firebase;
 
-``
+```
 
 Go to Firebase, search the tap 'Add Firebase to your web app' ,
 copy the var config and paste in the .js.
