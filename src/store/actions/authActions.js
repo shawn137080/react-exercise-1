@@ -1,4 +1,4 @@
-export const signIn = credentials => {
+export const signIn = (credentials) => {
   return (dispatch, getState, { getFirebase }) => {
     const firebase = getFirebase();
 
@@ -42,6 +42,7 @@ export const signUp = (newUser) =>{
             dispatch({ type: 'SIGNUP_SUCCESS'})
         }).catch((err)=>{
             dispatch({ type:'SIGNUP_ERROR',err})
+            console.log(err)
         })
     }
 }

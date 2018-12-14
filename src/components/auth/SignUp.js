@@ -7,12 +7,12 @@ export class SignUp extends Component {
     state = {
         email: '',
         password: '',
-        firstname:'',
+        firstName:'',
         lastName: ''
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(this.state)
+        console.log('signup state',this.state)
         this.props.signUp(this.state)
     }
     handleChange = (e) =>{
